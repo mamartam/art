@@ -32,5 +32,8 @@
         border-radius: 4px;
       }
     }
+    &-date {
+      color: utils.getColor("grey");
+    }
   }
 }
