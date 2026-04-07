@@ -1,6 +1,7 @@
 @use "./utils/index" as utils;
 @use "./layout/index" as layout;
 @use "./base/index" as base;
+@use "./components/index" as components;
 
 body {
   width: 100%;
