@@ -163,6 +163,38 @@ a {
   font-family: "Inter", sans-serif;
 }
 
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+.mb-48 {
+  margin-bottom: 48px !important;
+}
+
+.pl-32 {
+  padding-left: 32px !important;
+}
+
+.pl-48 {
+  padding-left: 48px !important;
+}
+
+.pr-32 {
+  padding-right: 32px !important;
+}
+
+.pr-48 {
+  padding-right: 48px !important;
+}
+
+.pt-32 {
+  padding-top: 32px !important;
+}
+
+.pt-48 {
+  padding-top: 48px !important;
+}
+
 .link-btn {
   display: flex;
   justify-content: center;
@@ -196,36 +228,4 @@ main,
 footer {
   width: 100%;
   max-width: 1440px;
-}
-
-.mb-32 {
-  margin-bottom: 32px !important;
-}
-
-.mb-48 {
-  margin-bottom: 48px !important;
-}
-
-.pl-32 {
-  padding-left: 32px !important;
-}
-
-.pl-48 {
-  padding-left: 48px !important;
-}
-
-.pr-32 {
-  padding-right: 32px !important;
-}
-
-.pr-48 {
-  padding-right: 48px !important;
-}
-
-.pt-32 {
-  padding-top: 32px !important;
-}
-
-.pt-48 {
-  padding-top: 48px !important;
 }/*# sourceMappingURL=main.css.map */
