@@ -1,7 +1,6 @@
 @use "./utils/index" as utils;
 @use "./layout/index" as layout;
 @use "./base/index" as base;
-@use "./components/index" as components;
 
 body {
   width: 100%;
@@ -17,4 +16,81 @@ main,
 footer {
   width: 100%;
   max-width: 1440px;
+}
+
+.active {
+  span:nth-of-type(1) {
+    transform: translateY(0px) rotate(0);
+    animation: activeBurgerMenu-span1 0.3s ease-in-out forwards;
+  }
+  span:nth-of-type(2) {
+    opacity: 1;
+    animation: activeBurgerMenu-span2 0.3s ease-in-out forwards;
+  }
+  span:nth-of-type(3) {
+    transform: translateY(0px);
+    animation: activeBurgerMenu-span3 0.3s ease-in-out forwards;
+  }
+}
+.not-active {
+  span:nth-of-type(1) {
+    transform: translateY(8px);
+    animation: notActiveBurgerMenu-span1 0.3s ease-in-out forwards;
+  }
+  span:nth-of-type(2) {
+    opacity: 0;
+    animation: notActiveBurgerMenu-span2 0.3s ease-in-out forwards;
+  }
+  span:nth-of-type(3) {
+    transform: translateY(-8px);
+    animation: notActiveBurgerMenu-span3 0.3s ease-in-out forwards;
+  }
+}
+@keyframes activeBurgerMenu-span2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes notActiveBurgerMenu-span2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes activeBurgerMenu-span1 {
+  from {
+    transform: translateY(0px) rotate(0);
+  }
+  to {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+@keyframes notActiveBurgerMenu-span1 {
+  from {
+    transform: translateY(7px) rotate(45deg);
+  }
+  to {
+    transform: translateY(0px) rotate(0);
+  }
+}
+@keyframes activeBurgerMenu-span3 {
+  from {
+    transform: translateY(0px) rotate(0);
+  }
+  to {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+@keyframes notActiveBurgerMenu-span3 {
+  from {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  to {
+    transform: translateY(0px) rotate(0);
+  }
 }
