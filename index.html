@@ -12,16 +12,24 @@
     <title>Art Gallery</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header pl-32 pr-32 pt-32 mb-48">
       <nav class="header__nav">
         <a class="header__nav--logo" href="#">ARTGALLERY</a>
         <ul class="header__nav--nav-list">
-          <li class="header__nav--nav-list-item"><a href="#">Home</a></li>
-          <li class="header__nav--nav-list-item"><a href="#">About</a></li>
-          <li class="header__nav--nav-list-item"><a href="#">Artists</a></li>
-          <li class="header__nav--nav-list-item"><a href="#">Careers</a></li>
-          <li class="header__nav--nav-list-item"><a href="#">News</a></li>
-          <li class="header__nav--nav-list-item"><a href="#">Company</a></li>
+          <li class="header__nav--nav-list-item pr-32"><a href="#">Home</a></li>
+          <li class="header__nav--nav-list-item pr-32">
+            <a href="#">About</a>
+          </li>
+          <li class="header__nav--nav-list-item pr-32">
+            <a href="#">Artists</a>
+          </li>
+          <li class="header__nav--nav-list-item pr-32">
+            <a href="#">Careers</a>
+          </li>
+          <li class="header__nav--nav-list-item pr-32"><a href="#">News</a></li>
+          <li class="header__nav--nav-list-item pr-32">
+            <a href="#">Company</a>
+          </li>
           <li class="header__nav--nav-list-item link-btn">
             <a href="#">Get Started</a>
           </li>
@@ -32,8 +40,68 @@
           <span></span>
         </div>
       </nav>
+      <section class="header__intro pl-32">
+        <div class="header__intro--decor"></div>
+        <h1 class="header__intro--h1 mb-32">
+          Art pieces made easy accessible for everyone
+        </h1>
+        <p class="header__intro--description mb-32">
+          Learn, buy and trade art pieces of your favorite artist around the
+          world by using crypto currencies.
+        </p>
+        <a class="header__intro--link link-btn" href="#"> Learn more </a>
+      </section>
     </header>
-    <main class="main"></main>
+    <main class="main pl-32 pr-32 mb-32">
+      <h2 class="main__header pl-32 mb-32 pt-32">Newest reads</h2>
+      <section class="main__reads pl-32 pr-32 mb-32">
+        <div class="main__reads--box">
+          <img class="mb-32" src="./assets/images/art-1.jpg" alt="" />
+          <div class="main__reads--box-info pl-32 pr-32">
+            <p class="reads--box-date mb-32">5 August, 2022</p>
+            <h3 class="reads--box-descr mb-32">
+              May That Nuclear War Be Cursed! (1978) by Maria Prymachenko
+            </h3>
+            <a
+              class="link mb-32"
+              href="https://rubryka.com/en/article/iconic-ukrainian-art/"
+              target="_blank"
+              >Read more -></a
+            >
+          </div>
+        </div>
+        <div class="main__reads--box">
+          <img class="mb-32" src="./assets/images/art-2.png" alt="" />
+          <div class="main__reads--box-info pl-32 pr-32">
+            <p class="reads--box-date mb-32">5 August, 2022</p>
+            <h3 class="reads--box-descr mb-32">
+              Red Sunset on the Dnipro River (1905–8) by Arkhyp Kuindzhi
+            </h3>
+            <a
+              class="link mb-32"
+              href="https://rubryka.com/en/article/iconic-ukrainian-art/"
+              target="_blank"
+              >Read more -></a
+            >
+          </div>
+        </div>
+        <div class="main__reads--box">
+          <img class="mb-32" src="./assets/images/art-3.jpg" alt="" />
+          <div class="main__reads--box-info pl-32 pr-32">
+            <p class="reads--box-date mb-32">5 August, 2022</p>
+            <h3 class="reads--box-descr mb-32">
+              Awakening (1992) by Ivan Marchuk
+            </h3>
+            <a
+              class="link mb-32"
+              href="https://rubryka.com/en/article/iconic-ukrainian-art/"
+              target="_blank"
+              >Read more -></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
     <script defer src="src/js/main.js"></script>
   </body>
 </html>
