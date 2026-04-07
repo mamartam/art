@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../../../assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "Libre Caslon Display", serif;
+  src: url("../../../assets/fonts/Libre_Caslon_Display/LibreCaslonDisplay-Regular.ttf");
+}
+
+h1 {
+  font-family: "Libre Caslon Display", serif;
+}
+
+h2,
+h3,
+p,
+a {
+  font-family: "Inter", sans-serif;
+}
