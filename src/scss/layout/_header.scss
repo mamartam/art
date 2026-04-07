@@ -4,8 +4,7 @@
 .header {
   height: 1024px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: start;
   background-image: url("../../../assets/images/mobile/intro-bg.jpg");
   background-repeat: no-repeat;
@@ -25,34 +24,56 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    &--logo {
+      font-size: 1.75rem;
+      font-weight: 900;
+    }
     &--nav-list {
       display: none;
       flex-direction: row;
+      align-items: center;
       @include utils.screenSize("large") {
         display: flex;
       }
-
-      &-item:not(:last-of-type) {
-        margin-right: 36px;
+    }
+    &--burger {
+      display: flex;
+      @include utils.screenSize("large") {
+        display: none;
+      }
+      flex-direction: column;
+      justify-content: space-between;
+      width: 27px;
+      height: 19px;
+      span {
+        width: 100%;
+        height: 3px;
+        display: block;
+        border-radius: 1rem;
+        background-color: map.get(utils.$colorPalette, "primary-white");
       }
     }
   }
+  &__intro {
+    margin: auto 0;
+    width: 100%;
+    max-width: 748px;
 
-  &__burger {
-    display: flex;
-    @include utils.screenSize("large") {
-      display: none;
+    &--h1 {
+      font-size: utils.getTextSize("mobile");
+      @include utils.screenSize("small") {
+        font-size: utils.getTextSize("tablet");
+      }
+      @include utils.screenSize("large") {
+        font-size: utils.getTextSize("desktop");
+      }
     }
-    flex-direction: column;
-    justify-content: space-between;
-    width: 27px;
-    height: 19px;
-    span {
+    &--description {
       width: 100%;
-      height: 3px;
-      display: block;
-      border-radius: 1rem;
-      background-color: map.get(utils.$colorPalette, "primary-white");
+      max-width: 528px;
+      font-size: 18px;
+      line-height: 30px;
+      color: utils.getColor("primary-white");
     }
   }
 }
