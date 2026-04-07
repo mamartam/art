@@ -1,0 +1,19 @@
+@use "./utils/index" as utils;
+@use "./layout/index" as layout;
+@use "./base/index" as base;
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 1440px;
+}
