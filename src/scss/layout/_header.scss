@@ -1,6 +1,27 @@
 @use "../utils/index" as utils;
 @use "sass:map";
+%link-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 153px;
+  height: 42px;
+  color: utils.getColor("primary-white");
+  border: 1px solid utils.getColor("primary-white");
 
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  border-radius: 10px;
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: utils.getColor("primary-white");
+    color: utils.getColor("accent");
+  }
+}
 .header {
   height: 1024px;
   display: flex;
@@ -27,6 +48,7 @@
     &--logo {
       font-size: 1.75rem;
       font-weight: 900;
+      color: utils.getColor("primary-white");
     }
     &--nav-list {
       display: none;
@@ -34,6 +56,12 @@
       align-items: center;
       @include utils.screenSize("large") {
         display: flex;
+      }
+      a {
+        color: utils.getColor("primary-white");
+      }
+      &-item:last-of-type a {
+        @extend %link-btn;
       }
     }
     &--burger {
@@ -58,6 +86,12 @@
     margin: auto 0;
     width: 100%;
     max-width: 748px;
+    &--decor {
+      display: block;
+      width: 90px;
+      height: 15px;
+      background-color: utils.getColor("primary-white");
+    }
 
     &--h1 {
       font-size: utils.getTextSize("mobile");
@@ -74,6 +108,9 @@
       font-size: 18px;
       line-height: 30px;
       color: utils.getColor("primary-white");
+    }
+    &--link {
+      @extend %link-btn;
     }
   }
 }
