@@ -1,5 +1,5 @@
 @use "sass:map";
-// Colors
+
 $colorPalette: (
   "primary-white": #ffffff,
   "primary-black": #000000,
@@ -12,13 +12,12 @@ $colorPalette: (
   @return map.get($colorPalette, $color);
 }
 
-// Screen Sizes
-// $screenSizes: (
-//   "small": 375px,
-//   "medium": 744px,
-//   "large": 1440px,
-// );
+$h1Size: (
+  "mobile": 45px,
+  "tablet": 65px,
+  "desktop": 75px,
+);
 
-// @function getScreenSize($size) {
-//   @return map-get: ($screenSizes, $size);
-// }
+@function getTextSize($key) {
+  @return map.get($h1Size, $key);
+}
