@@ -1,0 +1,25 @@
+$space-values: (
+  32: 32px,
+  48: 48px,
+);
+
+$sides: (
+  "mb": "margin-bottom",
+  "pl": "padding-left",
+  "pr": "padding-right",
+  "pt": "padding-top",
+);
+
+@each $abbreviation, $properties in $sides {
+  @each $size, $value in $space-values {
+    .#{$abbreviation}-#{$size} {
+      @if type-of($properties) == list {
+        @each $prop in $properties {
+          #{$prop}: $value !important;
+        }
+      } @else {
+        #{$properties}: $value !important;
+      }
+    }
+  }
+}

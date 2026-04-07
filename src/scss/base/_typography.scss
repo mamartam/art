@@ -1,6 +1,7 @@
+@use "../utils/index" as utils;
 @font-face {
   font-family: "Inter", sans-serif;
-  src: url("../../../assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf");
+  src: url("..//../../assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf");
 }
 @font-face {
   font-family: "Libre Caslon Display", serif;
@@ -8,7 +9,9 @@
 }
 
 h1 {
+  color: utils.getColor("primary-white");
   font-family: "Libre Caslon Display", serif;
+  font-weight: bolder;
 }
 
 h2,
