@@ -1,8 +1,7 @@
 .header {
   height: 1024px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: start;
   background-image: url("../../../assets/images/mobile/intro-bg.jpg");
   background-repeat: no-repeat;
@@ -40,9 +39,6 @@
     display: flex;
   }
 }
-.header__nav--nav-list-item:not(:last-of-type) {
-  margin-right: 36px;
-}
 .header__nav--burger {
   display: flex;
 }
@@ -64,6 +60,70 @@
   border-radius: 1rem;
   background-color: #ffffff;
 }
+.header__intro {
+  margin: auto 0;
+  width: 100%;
+  max-width: 748px;
+}
+.header__intro--h1 {
+  font-size: 45px;
+}
+@media screen and (min-width: 576px) {
+  .header__intro--h1 {
+    font-size: 65px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__intro--h1 {
+    font-size: 75px;
+  }
+}
+.header__intro--description {
+  width: 100%;
+  max-width: 528px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.main__reads {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 576px) {
+  .main__reads {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__reads {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.main__reads {
+  gap: 25px;
+}
+.main__reads--box {
+  width: 100%;
+  max-width: 419px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #b7b7b7;
+}
+.main__reads--box-info {
+  display: flex;
+  flex-direction: column;
+}
+.main__reads--box-info .link {
+  color: #d9852c;
+  align-self: flex-end;
+}
+.main__reads--box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
 
 * {
   box-sizing: border-box;
@@ -84,14 +144,16 @@ li {
 
 @font-face {
   font-family: "Inter", sans-serif;
-  src: url("../../../assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf");
+  src: url("..//../../assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf");
 }
 @font-face {
   font-family: "Libre Caslon Display", serif;
   src: url("../../../assets/fonts/Libre_Caslon_Display/LibreCaslonDisplay-Regular.ttf");
 }
 h1 {
+  color: #ffffff;
   font-family: "Libre Caslon Display", serif;
+  font-weight: bolder;
 }
 
 h2,
@@ -134,4 +196,36 @@ main,
 footer {
   width: 100%;
   max-width: 1440px;
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+.mb-48 {
+  margin-bottom: 48px !important;
+}
+
+.pl-32 {
+  padding-left: 32px !important;
+}
+
+.pl-48 {
+  padding-left: 48px !important;
+}
+
+.pr-32 {
+  padding-right: 32px !important;
+}
+
+.pr-48 {
+  padding-right: 48px !important;
+}
+
+.pt-32 {
+  padding-top: 32px !important;
+}
+
+.pt-48 {
+  padding-top: 48px !important;
 }/*# sourceMappingURL=main.css.map */

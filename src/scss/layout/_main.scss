@@ -1,0 +1,36 @@
+@use "../utils/index" as utils;
+.main {
+  &__reads {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include utils.screenSize("small") {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include utils.screenSize("extra-large") {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    gap: 25px;
+    &--box {
+      width: 100%;
+      max-width: 419px;
+      border-radius: 6px;
+      overflow: hidden;
+
+      border: 1px solid utils.getColor("grey");
+      &-info {
+        display: flex;
+        flex-direction: column;
+        .link {
+          color: utils.getColor("accent");
+          align-self: flex-end;
+        }
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+    }
+  }
+}
