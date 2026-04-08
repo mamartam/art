@@ -28,16 +28,16 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  background-image: url("../../assets/images/mobile/intro-bg.jpg");
+  background-image: url("../../../assets/images/mobile/intro-bg.webp");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top center;
 
   @include utils.screenSize("small") {
-    background-image: url("../../assets/images/tablet/intro-bg.jpg");
+    background-image: url("../../assets/images/tablet/intro-bg.webp");
   }
   @include utils.screenSize("large") {
-    background-image: url("../../assets/images/desktop/intro-bg.jpg");
+    background-image: url("../../assets/images/desktop/intro-bg.webp");
   }
 
   &__nav {
