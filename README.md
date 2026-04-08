@@ -55,7 +55,7 @@ While this project successfully achieved its goal of implementing a complex SCSS
 - Performance Tuning – Adding a build tool like Vite or Webpack to minify CSS/JS files and optimize assets for production.
 
 ## 🍿 Video
-...
+https://github.com/user-attachments/assets/379be17a-9c63-4df7-857b-d73e6bf6a298
 
 ## Lighthouse
 
