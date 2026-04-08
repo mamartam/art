@@ -13,9 +13,11 @@ $colorPalette: (
 }
 
 $h1Size: (
-  "mobile": 45px,
-  "tablet": 65px,
-  "desktop": 75px,
+  "mobile": 2.813rem,
+  //45px,
+  "tablet": 4.063rem,
+  // 65px,
+  "desktop": 4.688rem, //75px,
 );
 
 @function getTextSize($key) {

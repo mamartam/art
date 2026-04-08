@@ -9,11 +9,11 @@
     @include utils.screenSize("extra-large") {
       grid-template-columns: 1fr 1fr 1fr;
     }
-    gap: 25px;
+    gap: 1.5rem; //24px
     &--box {
       width: 100%;
-      max-width: 419px;
-      border-radius: 6px;
+      max-width: 26.188rem; //419px
+      border-radius: 0.375rem; //6px
       overflow: hidden;
 
       border: 1px solid utils.getColor("grey");
@@ -29,7 +29,7 @@
         display: block;
         width: 100%;
         height: auto;
-        border-radius: 4px;
+        border-radius: 0.25rem; //4px
       }
     }
     &-date {
