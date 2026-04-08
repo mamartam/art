@@ -260,8 +260,11 @@ a {
   flex-direction: column;
 }
 .main__reads--box-info .link {
-  color: #bd6b1a;
+  background-color: #bd6b1a;
+  color: #ffffff;
   align-self: flex-end;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 .main__reads--box img {
   display: block;
