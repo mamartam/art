@@ -3,7 +3,7 @@
 Art Landing Page — A clean, responsive landing page featuring famous masterpieces. Built to practice SCSS techniques and BEM methodology.
 I was inspired by the design created by Juli ( https://www.figma.com/community/file/1095377079540950532/responsive-design-art-news-landing-page )
 
-## 🔗[Live Demo Link](https://mamartam.github.io/art/)
+## 🔗[Live Demo Link](https://mamartam.github.io/art-gallery/)
 
 ## 📦 Technologies
 
