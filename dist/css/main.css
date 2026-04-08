@@ -22,8 +22,8 @@ button {
 
 a:focus-visible,
 button:focus-visible {
-  border: 1px solid #d9852c;
-  outline: 1px solid #d9852c;
+  border: 1px solid #bd6b1a;
+  outline: 1px solid #bd6b1a;
   outline-offset: 2px;
 }
 
@@ -96,7 +96,7 @@ a {
 }
 .header__intro--link:hover, .header__nav--nav-list-item:last-of-type a:hover {
   background-color: #ffffff;
-  color: #d9852c;
+  color: #bd6b1a;
 }
 
 .header {
@@ -260,7 +260,7 @@ a {
   flex-direction: column;
 }
 .main__reads--box-info .link {
-  color: #d9852c;
+  color: #bd6b1a;
   align-self: flex-end;
 }
 .main__reads--box img {
