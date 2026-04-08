@@ -31,3 +31,26 @@ window.addEventListener("resize", () => {
     body.classList.remove("activeBurger");
   }
 });
+// const observerOptions = {
+//   root: null,
+//   // 0px 0px -20% 0px означає: "рахуй, що елемент з'явився,
+//   // коли він піднявся хоча б на 20% від низу екрана"
+//   rootMargin: "0px 0px -50px 0px",
+//   threshold: 0.01,
+// };
+const anim = document.querySelectorAll(".anim");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  },
+  { threshold: 0 },
+);
+anim.forEach((element) => {
+  observer.observe(element);
+});
