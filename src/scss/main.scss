@@ -1,6 +1,6 @@
 @use "./utils/index" as utils;
-@use "./layout/index" as layout;
 @use "./base/index" as base;
+@use "./layout/index" as layout;
 
 body {
   width: 100%;
@@ -19,6 +19,9 @@ footer {
 }
 
 .active {
+  span {
+    background-color: black;
+  }
   span:nth-of-type(1) {
     transform: translateY(0px) rotate(0);
     animation: activeBurgerMenu-span1 0.3s ease-in-out forwards;
@@ -33,6 +36,9 @@ footer {
   }
 }
 .not-active {
+  span {
+    background-color: white;
+  }
   span:nth-of-type(1) {
     transform: translateY(8px);
     animation: notActiveBurgerMenu-span1 0.3s ease-in-out forwards;
@@ -92,5 +98,15 @@ footer {
   }
   to {
     transform: translateY(0px) rotate(0);
+  }
+}
+
+.activeBurger {
+  overflow: hidden;
+  .header__nav--logo {
+    color: black;
+  }
+  .header__nav--nav-list {
+    display: flex;
   }
 }
