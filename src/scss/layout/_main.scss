@@ -21,11 +21,8 @@
         display: flex;
         flex-direction: column;
         .link {
-          background-color: utils.getColor("accent");
-          color: utils.getColor("primary-white");
+          color: utils.getColor("фссуте");
           align-self: flex-end;
-          padding: 0.5rem;
-          border-radius: 0.5rem;
         }
       }
       img {
