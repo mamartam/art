@@ -58,4 +58,9 @@ While this project successfully achieved its goal of implementing a complex SCSS
 https://github.com/user-attachments/assets/379be17a-9c63-4df7-857b-d73e6bf6a298
 
 ## Lighthouse
+### Mobile
+https://github.com/user-attachments/assets/10dd4520-6c50-47d4-8e9c-eca26e8a9dfd
+
+### Desktop
+https://github.com/user-attachments/assets/d3548f30-ee05-4cbe-a8f9-52dc1b98c44c
 
