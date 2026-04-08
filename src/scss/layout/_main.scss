@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         .link {
-          color: utils.getColor("accent");
+          color: utils.getColor("grey");
           align-self: flex-end;
         }
       }
