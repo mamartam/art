@@ -97,19 +97,19 @@ a {
   display: flex;
   flex-direction: column;
   align-items: start;
-  background-image: url("../../../assets/images/mobile/intro-bg.jpg");
+  background-image: url("../../assets/images/mobile/intro-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top center;
 }
 @media screen and (min-width: 576px) {
   .header {
-    background-image: url("../../../assets/images/tablet/intro-bg.jpg");
+    background-image: url("../../assets/images/tablet/intro-bg.jpg");
   }
 }
 @media screen and (min-width: 992px) {
   .header {
-    background-image: url("../../../assets/images/desktop/intro-bg.jpg");
+    background-image: url("../../assets/images/desktop/intro-bg.jpg");
   }
 }
 .header__nav {
