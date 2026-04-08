@@ -1,4 +1,4 @@
-# Art Gallery
+# 👩‍🎨 Art Gallery
 
 Art Landing Page — A clean, responsive landing page featuring famous masterpieces. Built to practice SCSS techniques and BEM methodology.
 I was inspired by the design created by Juli ( https://www.figma.com/community/file/1095377079540950532/responsive-design-art-news-landing-page )
@@ -44,13 +44,14 @@ I practiced a `Mobile First` strategy, but also added complex logic for the navi
   
 I paid close attention to using semantic tags like `<header>`, `<main>`, and `<section>` to ensure the gallery is structured correctly for screen readers and SEO.
 
+- 🏆 Performance & Quality
+One challenge was balancing the original design's aesthetics with accessibility standards. I had to fine-tune the accent color palette to maintain the visual identity while ensuring high contrast for readability, eventually achieving a perfect 100 Accessibility score.
+
 ## 🚀 How It Can Be Improved?
 
 While this project successfully achieved its goal of implementing a complex SCSS architecture, there are several areas for future optimization and feature expansion:
 
 - JavaScript Refactoring & Scalability – Currently, the JS logic handles basic UI interactions (`burger menu`, `scroll animations`). A more robust approach would be to refactor the code into ES6 modules to better organize logic as the project grows.
-- Accessibility (a11y) Enhancements – Improving keyboard navigation by managing `focus` when the mobile menu is open (focus trapping) and adding more descriptive `aria-label` attributes for interactive elements.
-- Image Optimization – Implementing `Lazy Loading` for gallery images and using modern formats like `.webp` with `<picture>` tags to improve loading speeds and performance scores.
 - Dynamic Content – Transitioning from hard-coded HTML to fetching art pieces from a JSON file or an external API to make the gallery dynamic and easily updatable.
 - Performance Tuning – Adding a build tool like Vite or Webpack to minify CSS/JS files and optimize assets for production.
 
@@ -63,4 +64,3 @@ https://github.com/user-attachments/assets/10dd4520-6c50-47d4-8e9c-eca26e8a9dfd
 
 ### Desktop
 https://github.com/user-attachments/assets/d3548f30-ee05-4cbe-a8f9-52dc1b98c44c
-
